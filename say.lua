@@ -8,8 +8,6 @@ local registry = {}
 local current_namespace
 local fallback_namespace
 
-local s = {}
-
 function _M:set_namespace(namespace)
 	current_namespace = namespace
 	if not registry[current_namespace] then
@@ -59,4 +57,4 @@ _M:set_namespace('en')
 --	s._registry = registry -- force different name to make sure with _TEST behaves exactly as without _TEST
 --end
 
-return setmetatable(s, __meta)
+return setmetatable(_M, __meta)
