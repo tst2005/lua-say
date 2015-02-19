@@ -10,7 +10,7 @@ Check out [busted](http://www.olivinelabs.com/busted) for
 extended examples.
 
 ```lua
-s = require("say")
+local s = require("say")
 
 s:set_namespace("en")
 
